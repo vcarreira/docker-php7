@@ -25,6 +25,7 @@ RUN apt-get update -y && \
     php7.0-imap \
     php7.0-pgsql \
     php7.0-intl \
+    php7.0-mbstring \
     php7.0-redis \
     php7.0-mongo \
     php7.0-sqlite \
