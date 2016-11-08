@@ -17,6 +17,8 @@ RUN echo "deb http://ppa.launchpad.net/ondrej/php/ubuntu yakkety main" >> /etc/a
 RUN apt-get update -y && \
     DEBIAN_FRONTEND=noninteractive \
     apt-get install -y \
+    zip \
+    unzip \
     php7.0-cli \
     php7.0-mcrypt \
     php7.0-mysqlnd \
@@ -34,6 +36,7 @@ RUN apt-get update -y && \
     php7.0-ssh2 \
     php7.0-gd \
     php7.0-gmp \
+    php7.0-zip \
     php-pear \
     php7.0-dev make  \
     wget \
