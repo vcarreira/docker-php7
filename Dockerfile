@@ -19,26 +19,26 @@ RUN apt-get update -y && \
     apt-get install -y \
     zip \
     unzip \
-    php7.0-cli \
-    php7.0-mcrypt \
-    php7.0-mysqlnd \
-    php7.0-apcu \
-    php7.0-memcached \
-    php7.0-imap \
-    php7.0-pgsql \
-    php7.0-intl \
-    php7.0-mbstring \
-    php7.0-redis \
-    php7.0-mongo \
-    php7.0-sqlite \
-    php7.0-curl \
-    php7.0-json \
-    php7.0-ssh2 \
-    php7.0-gd \
-    php7.0-gmp \
-    php7.0-zip \
+    php7.1-cli \
+    php7.1-mcrypt \
+    php7.1-mysqlnd \
+    php7.1-apcu \
+    php7.1-memcached \
+    php7.1-imap \
+    php7.1-pgsql \
+    php7.1-intl \
+    php7.1-mbstring \
+    php7.1-redis \
+    php7.1-mongo \
+    php7.1-sqlite \
+    php7.1-curl \
+    php7.1-json \
+    php7.1-ssh2 \
+    php7.1-gd \
+    php7.1-gmp \
+    php7.1-zip \
     php-pear \
-    php7.0-dev make  \
+    php7.1-dev make  \
     wget \
     git \
     curl && apt-get clean && rm -rf /var/lib/apt/lists/*
