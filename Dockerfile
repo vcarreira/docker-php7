@@ -37,6 +37,7 @@ RUN apt-get update -y && \
     php7.1-gd \
     php7.1-gmp \
     php7.1-zip \
+    php7.1-soap \
     php-pear \
     php7.1-dev make  \
     wget \
