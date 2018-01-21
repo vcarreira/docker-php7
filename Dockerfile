@@ -1,4 +1,4 @@
-FROM ubuntu:yakkety
+FROM ubuntu:bionic
 
 MAINTAINER "Vitor Carreira" <vitor.carreira@gmail.com>
 
@@ -8,10 +8,6 @@ RUN apt-get update -y && \
     DEBIAN_FRONTEND=noninteractive \
     apt-get install -y \
     software-properties-common
-
-RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 4F4EA0AAE5267A6C
-
-RUN echo "deb http://ppa.launchpad.net/ondrej/php/ubuntu yakkety main" >> /etc/apt/sources.list
 
 # Common PHP pages across containers
 RUN apt-get update -y && \
