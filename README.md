@@ -4,8 +4,6 @@ This is a [Docker](http://www.docker.com) image for [PHP 7](http://php.net/) sui
 
 An automated build for this repo is available on the [Docker Hub](https://registry.hub.docker.com/u/vcarreira/php7/).
 
-This includes php 7.1 and 7.2, linked to docker tags `7.1` and `7.2`.
-
 ## Related images
 This image works is used across the [Docker Laravel](https://github.com/vcarreira/docker-laravel) multi-container solution.
 

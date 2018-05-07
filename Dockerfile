@@ -10,8 +10,7 @@ RUN apt-get update -y && \
     software-properties-common
 
 # Common PHP pages across containers
-RUN add-apt-repository ppa:ondrej/php -y && \
-    apt-get update -y && \
+RUN apt-get update -y && \
     DEBIAN_FRONTEND=noninteractive \
     apt-get install -y \
     zip \
