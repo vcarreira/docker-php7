@@ -1,0 +1,45 @@
+FROM ubuntu:bionic
+
+LABEL maintainer="Vitor Carreira <vitor.carreira@gmail.com>"
+
+WORKDIR /tmp
+
+RUN apt-get update -y && \
+    DEBIAN_FRONTEND=noninteractive \
+    apt-get install -y \
+    software-properties-common
+
+
+# Common PHP pages across containers
+RUN add-apt-repository -y ppa:ondrej/php && \
+    apt-get update -y && \
+    DEBIAN_FRONTEND=noninteractive \
+    apt-get install -y \
+    zip \
+    unzip \
+    php7.4-cli \
+    php7.4-mysqlnd \
+    php7.4-apcu \
+    php7.4-memcached \
+    php7.4-imap \
+    php7.4-pgsql \
+    php7.4-intl \
+    php7.4-mbstring \
+    php7.4-redis \
+    php7.4-mongo \
+    php7.4-sqlite \
+    php7.4-curl \
+    php7.4-json \
+    php7.4-ssh2 \
+    php7.4-gd \
+    php7.4-gmp \
+    php7.4-zip \
+    php7.4-bcmath \
+    php7.4-soap \
+    php-pear \
+    php7.4-dev make  \
+    wget \
+    git \
+    curl && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+CMD ["php", "-a"]
